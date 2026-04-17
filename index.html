@@ -20,24 +20,29 @@
 
 <body>
 
-  <!-- ══════════════════════════════════════════
-       NAVIGATION
-  ══════════════════════════════════════════ -->
-  <nav>
-    <div class="container">
-      <span class="nav-logo">LA</span>
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <span class="nav-logo">LA</span>
+    
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Theme Toggle Button -->
+    <div class="theme-toggle">
+      <button id="theme-switch" aria-label="Toggle theme">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </button>
     </div>
-  </nav>
-
-
+  </div>
+</nav>
   <!-- ══════════════════════════════════════════
        HERO
   ══════════════════════════════════════════ -->
@@ -47,7 +52,7 @@
       <!-- Profile photo -->
       <div class="profile-wrap reveal">
         <img
-          src="assets/profile.jpg"
+          src="c:\Users\SA\Downloads\LumaAlazzeh.png"
           alt="Luma Alazzeh"
           class="profile-photo"
           onerror="this.style.background='#c4907e';this.alt='LA'"
@@ -56,7 +61,7 @@
 
       <!-- Headline -->
       <div class="hero-subtitle reveal delay-1">
-        Junior Data &amp; ML Engineer · Data Analyst
+         AI Engineer | Data Analyst
       </div>
 
       <h1 class="hero-name reveal delay-2">Luma Alazzeh</h1>
@@ -115,10 +120,12 @@
         <div class="about-text reveal">
           <h3>Data & ML Engineer</h3>
           <p>
-            I am a results-oriented Data &amp; ML Engineer with hands-on experience in Python, machine learning,
-            SQL analytics, and audit data pipelines. I hold a B.Sc. in Data Science and Artificial Intelligence
-            from Al al-Bayt University (2025) and have sharpened my skills through internships at
-            ZeeDimension and Siemens Healthineers.
+           I am a Data Science and Artificial Intelligence graduate from Al al-Bayt University, currently advancing my technical expertise as an AI Engineer through the AI.SPIRE Applied AI program.
+          My background is rooted in leveraging Python to transform complex datasets into actionable insights, with practical experience in anomaly detection and audit analytics gained during my time at ZeeDimension and Siemens Healthineers.
+          I am driven by the challenge of building intelligent systems that solve real-world problems.This passion led me to join AI.SPIRE, where I am refining my skills in end-to-end ML engineering.
+          I am particularly interested in the mechanics of NLP systems, Retrieval-Augmented Generation (RAG), and the complexities of deploying ML models to production.
+          My goal is to bridge the gap between experimental models and scalable, production-ready AI solutions.
+          My work so far spans git-based collaboration workflows, end-to-end data pipelines, relational databases & SQL analytics, PyTorch model training, and KPI dashboards. Each module builds toward a full-stack AI engineering skill set.
           </p>
           <p>
             My graduation project, <strong>DeepSolar</strong>, is an intelligent solar panel fault detection
@@ -153,73 +160,7 @@
       </div>
     </div>
   </section>
-
-
-  <!-- ══════════════════════════════════════════
-       SKILLS
-  ══════════════════════════════════════════ -->
-  <section id="skills">
-    <div class="container">
-
-      <div class="section-header reveal">
-        <div class="section-icon"><i class="fa-solid fa-chart-mixed"></i></div>
-        <h2 class="section-title">Skills</h2>
-        <div class="section-divider"></div>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-card reveal">
-          <div class="skill-icon-box"><i class="fa-brands fa-python"></i></div>
-          <div class="skill-name">Python</div>
-        </div>
-
-        <div class="skill-card reveal delay-1">
-          <div class="skill-icon-box"><i class="fa-solid fa-brain"></i></div>
-          <div class="skill-name">Machine Learning &amp; Deep Learning</div>
-        </div>
-
-        <div class="skill-card reveal delay-2">
-          <div class="skill-icon-box"><i class="fa-solid fa-database"></i></div>
-          <div class="skill-name">SQL &amp; Databases</div>
-        </div>
-
-        <div class="skill-card reveal delay-3">
-          <div class="skill-icon-box"><i class="fa-solid fa-chart-column"></i></div>
-          <div class="skill-name">Data Analysis &amp; Visualization</div>
-        </div>
-
-        <div class="skill-card reveal delay-4">
-          <div class="skill-icon-box"><i class="fa-solid fa-table-cells-large"></i></div>
-          <div class="skill-name">Power BI &amp; Excel</div>
-        </div>
-
-        <div class="skill-card reveal delay-5">
-          <div class="skill-icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-          <div class="skill-name">Audit Analytics (ACL)</div>
-        </div>
-
-        <div class="skill-card reveal delay-6">
-          <div class="skill-icon-box"><i class="fa-solid fa-triangle-exclamation"></i></div>
-          <div class="skill-name">Anomaly Detection &amp; Reporting</div>
-        </div>
-
-        <div class="skill-card reveal delay-1">
-          <div class="skill-icon-box"><i class="fa-solid fa-fire"></i></div>
-          <div class="skill-name">PyTorch</div>
-        </div>
-
-        <div class="skill-card reveal delay-2">
-          <div class="skill-icon-box"><i class="fa-solid fa-arrows-rotate"></i></div>
-          <div class="skill-name">ETL Pipelines</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ══════════════════════════════════════════
+<!-- ══════════════════════════════════════════
        EXPERIENCE
   ══════════════════════════════════════════ -->
   <section id="experience">
@@ -285,8 +226,7 @@
         </div>
 
       </div>
-
-      <!-- Education -->
+<!-- Education -->
       <div style="margin-top: 48px;">
         <h3 style="font-size:1.2rem;font-weight:800;color:var(--brown);margin-bottom:20px;display:flex;align-items:center;gap:8px;">
           <i class="fa-solid fa-graduation-cap"></i> Education
@@ -313,6 +253,69 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div class="section-icon"><i class="fa-solid fa-chart-mixed"></i></div>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon-box"><i class="fa-brands fa-python"></i></div>
+          <div class="skill-name">Python</div>
+        </div>
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon-box"><i class="fa-solid fa-brain"></i></div>
+          <div class="skill-name">Machine Learning &amp; Deep Learning</div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon-box"><i class="fa-solid fa-database"></i></div>
+          <div class="skill-name">SQL &amp; Databases</div>
+        </div>
+
+        <div class="skill-card reveal delay-3">
+          <div class="skill-icon-box"><i class="fa-solid fa-chart-column"></i></div>
+          <div class="skill-name">Data Analysis &amp; Visualization</div>
+        </div>
+
+        <div class="skill-card reveal delay-4">
+          <div class="skill-icon-box"><i class="fa-solid fa-table-cells-large"></i></div>
+          <div class="skill-name">Power BI &amp; Excel</div>
+        </div>
+
+        <div class="skill-card reveal delay-5">
+          <div class="skill-icon-box"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+          <div class="skill-name">Audit Analytics (ACL)</div>
+        </div>
+
+        <div class="skill-card reveal delay-6">
+          <div class="skill-icon-box"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div class="skill-name">Anomaly Detection &amp; Reporting</div>
+        </div>
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon-box"><i class="fa-solid fa-fire"></i></div>
+          <div class="skill-name">PyTorch</div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon-box"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <div class="skill-name">ETL Pipelines</div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -654,7 +657,6 @@
           <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
           <div>
             <div class="contact-label">Email</div>
-            <div class="contact-value">alazzehluma03@gmail.com</div>
           </div>
         </a>
 
@@ -662,7 +664,6 @@
           <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
           <div>
             <div class="contact-label">Phone</div>
-            <div class="contact-value">+962-792-001-064</div>
           </div>
         </a>
 
@@ -671,7 +672,6 @@
           <div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div>
           <div>
             <div class="contact-label">LinkedIn</div>
-            <div class="contact-value">luma-alazzeh-b79bba2a6</div>
           </div>
         </a>
 
@@ -680,7 +680,6 @@
           <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
           <div>
             <div class="contact-label">GitHub</div>
-            <div class="contact-value">alazzehluma03-afk</div>
           </div>
         </a>
 
@@ -700,7 +699,7 @@
        FOOTER
   ══════════════════════════════════════════ -->
   <footer>
-    <p>&copy; 2025 <strong>Luma Alazzeh</strong> &nbsp;·&nbsp; Amman, Jordan &nbsp;·&nbsp; Built with HTML, CSS &amp; JavaScript</p>
+    <p>&copy; 2025 <strong>Luma Alazzeh</strong> &nbsp;·&nbsp; Amman, Jordan &nbsp;
   </footer>
 
 

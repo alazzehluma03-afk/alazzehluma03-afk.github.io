@@ -5,6 +5,7 @@
      - Scroll-reveal (fade-in) for .reveal elements
      - Active nav link highlight on scroll
      - Navbar background on scroll
+     - Theme Toggle (Light / Dark Mode)
    ============================================================ */
 
 /* ── 1. DOM ready ─────────────────────────────────────────── */
@@ -14,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNav();
   initNavbarShrink();
   initProjectCardHover();
+  initThemeToggle();        // Theme Toggle
 });
 
 /* ── 2. Scroll-reveal (fade-in on scroll) ─────────────────── */
@@ -25,13 +27,12 @@ function initScrollReveal() {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // Once visible, stop watching (saves performance)
           observer.unobserve(entry.target);
         }
       });
     },
     {
-      threshold: 0.10,  // trigger when 10% in view
+      threshold: 0.10,
       rootMargin: '0px 0px -40px 0px'
     }
   );
@@ -41,7 +42,6 @@ function initScrollReveal() {
 
 /* ── 3. Smooth scroll for nav & scroll-cue ───────────────── */
 function initSmoothScroll() {
-  // All anchor links
   document.querySelectorAll('a[href^="#"], button[data-target]').forEach(el => {
     el.addEventListener('click', (e) => {
       const href  = el.getAttribute('href') || el.getAttribute('data-target');
@@ -91,10 +91,33 @@ function initNavbarShrink() {
 
 /* ── 6. Project card hover lift (touch devices fallback) ──── */
 function initProjectCardHover() {
-  // CSS already handles desktop hover. This adds subtle focus for
-  // keyboard / screen-reader users.
   document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('focusin',  () => card.classList.add('focused'));
     card.addEventListener('focusout', () => card.classList.remove('focused'));
+  });
+}
+
+/* ── 7. Theme Toggle (Light ↔ Dark Mode) ─────────────────── */
+function initThemeToggle() {
+  const themeSwitch = document.getElementById('theme-switch');
+  const body = document.body;
+
+  if (!themeSwitch) return;
+
+  // Load saved theme or respect system preference
+  if (localStorage.getItem('theme') === 'dark' || 
+      (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    body.classList.add('dark');
+  }
+
+  // Toggle on click
+  themeSwitch.addEventListener('click', () => {
+    body.classList.toggle('dark');
+
+    if (body.classList.contains('dark')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
   });
 }
