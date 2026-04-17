@@ -1,6 +1,6 @@
 # alazzehluma03-afk.github.io
 Luma Alazzeh — Portfolio
-🌐 **Live Site**: [https://alazzehluma03-afk.github.io/](https://alazzehluma03-afk.github.io/)
+🌐 **Live Site**: [https://alazzehluma03-afk.github.io](https://alazzehluma03-afk.github.io)
 
 About
 This is my personal portfolio website showcasing my journey and work as a Data Science & AI Engineer. It highlights my experience in building intelligent systems, anomaly detection pipelines, and predictive models—developed through internships at ZeeDimension and Siemens Healthineers, and further refined through the AI.SPIRE program.
